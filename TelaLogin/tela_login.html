@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        LOGIN
+    </title>
+    <meta charset="utf-8">
+    <script>
+
+        var usuario = ''
+        var senha
+        function logarUsuario(usuario, senha) {
+            if (usuario == 'teste' && senha == 123) {
+                console.log = 'logado'
+                //window.location.href = "http://www.google.com.br"
+            }
+        }
+        logarUsuario(usuario, senha)
+
+    </script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div id="efeito_opacidade"></div>
+    <div class="telaLogin">
+        <h3 style="color: #FFF; font-size: 30px;">Faça login</h3>
+        <input id="usuario" style type="text" placeholder="Usuário" name="usuario">
+        <br>
+        <input id="senha" type="password" placeholder="Senha" name="senha">
+        <br>
+        <button onclick="logarUsuario()" class="efeito" type="button">Entrar</button>
+    </div>
+</body>
+
+</html>
